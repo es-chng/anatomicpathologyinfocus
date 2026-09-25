@@ -1,11 +1,11 @@
 ---
 # ---- Base fields: the same for every article ----
-title: "Prehospital Whole Blood for Traumatic Hemorrhage: Consistent Evidence from Two Randomized Trials"
+title: "Prehospital Whole Blood Versus Component Therapy for Traumatic Hemorrhage: A Synthesis of Two Phase 3 Randomized Trials"
 authors:
   - given: "Ewe Seng"
     family: "Ch'ng"
     affiliation: "Universiti Sains Malaysia, Penang, Malaysia"
-corresponding_email: "eweseng@usm.my"
+corresponding_email: "chngeweseng@hotmail.com"
 volume: 1
 issue: 1
 order: 1
@@ -107,7 +107,7 @@ last_reviewed: 2026-09-25
 editorial_note: "Editor-only field: never shown on the site or in the PDF."
 
 references:
-  - "Smith JE, Cardigan R, Sanderson E, et al. Prehospital Whole Blood in Traumatic Hemorrhage - A Randomized Controlled Trial. N Engl J Med. 2026;394(23):2305-2316. doi:10.1056/NEJMoa2516043"
-  - "Sperry JL, Guyette FX, Cotton BA, et al. Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage. N Engl J Med. 2026;394(23):2317-2328. doi:10.1056/NEJMoa2602167"
-  - "Rowell SE, Rogers SO Jr. Prehospital Whole Blood for Traumatic Hemorrhage - Consistent Evidence from Two Randomized Trials. N Engl J Med. 2026;394(23):2372-2373. doi:10.1056/NEJMe2605735"
+  - "Sperry JL, Guyette FX, Cotton BA, et al. Prehospital resuscitation with type O whole blood for trauma and hemorrhage. N Engl J Med. 2026;394:2317-2328. DOI: 10.1056/NEJMoa2602167"
+  - "Smith JE, Cardigan R, Sanderson E, et al. Prehospital whole blood in traumatic hemorrhage — a randomized controlled trial. N Engl J Med. 2026;394:2305-2316. DOI: 10.1056/NEJMoa2516043"
+  - "Rowell SE, Rogers SO Jr. Prehospital whole blood for traumatic hemorrhage — consistent evidence from two randomized trials. N Engl J Med. 2026;394:2367-2369. DOI: 10.1056/NEJMe2605735"
 ---
