@@ -3,8 +3,8 @@ title: "Renal Glomerular Pathology: A Pattern-Based Framework for Light Microsco
 authors:
   - given: "Ewe Seng"
     family: "Ch'ng"
-    affiliation: "Universiti Sains Malaysia, Penang, Malaysia"
-corresponding_email: "chngeweseng@hotmail.com"
+    affiliation: "Department of Pathology, School of Medical Sciences, Universiti Sains Malaysia, Kelantan, Malaysia"
+corresponding_email: "eweseng@usm.my"
 volume: 1
 issue: 1
 order: 1
@@ -125,11 +125,10 @@ mesangial_endocapillary: >-
   whenever an immune-complex pattern glomerulonephritis is encountered.
 
 mesangial_endocapillary_bottom_line: >-
-  In combined mesangial and endocapillary proliferation, the monoclonal versus
-  polyclonal immunofluorescence split is the fastest branch point, and
-  electron microscopy does the heavy lifting — except in proliferative
-  glomerulonephritis with monoclonal immunoglobulin deposits, which is
-  diagnosable only by immunofluorescence monoclonality.
+  In combined mesangial and endocapillary proliferation, monoclonal versus
+  polyclonal immunofluorescence is the fastest branch point; proliferative
+  glomerulonephritis with monoclonal immunoglobulin deposits is the only
+  chameleon, diagnosable solely by monoclonality.
 
 mpgn_pattern: >-
   The morphologic definition is deliberately broad and mechanism-agnostic:
