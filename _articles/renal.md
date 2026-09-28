@@ -22,26 +22,32 @@ question: >-
   to a final diagnosis?
 
 background: >-
-  The light microscopic pattern is a starting point, not a diagnosis.
+  Light microscopy pattern is a starting point, not a diagnosis.
   Immunofluorescence is the master branch point; electron microscopy resolves
   the remainder; clinical correlation is always required. This framework
   organizes glomerular disease by the pattern seen on light microscopy and
-  provides the decision logic for each pattern.
+  provides the decision logic for each pattern, from normal-appearing
+  glomeruli through mesangial, endocapillary, membranoproliferative,
+  crescentic, and nodular patterns.
 
 normal_lm: >-
   This is the most important pitfall category in renal biopsy interpretation.
   A glomerulus that looks entirely unremarkable on light microscopy does not
   mean the biopsy is normal. Both entities in this group are electron
-  microscopy-dependent diagnoses. If you sign out "normal" based on light
+  microscopy-dependent diagnoses — if you sign out "normal" based on light
   microscopy alone without adequate electron microscopy evaluation, you will
   miss both. Minimal change disease teaches the importance of adequate
-  sampling — normal-appearing glomeruli on light microscopy could simply mean
-  you have not sampled the segmentally sclerotic one. Thin basement membrane
-  nephropathy teaches the importance of quantitative rigor — you cannot
-  eyeball glomerular basement membrane thickness; it must be measured against
-  age-matched norms. Both remind you that normal light microscopy plus an
-  abnormal clinical picture is itself an indication for meticulous electron
-  microscopy examination, not a reason to defer it.
+  sampling: normal-appearing glomeruli on light microscopy could simply mean
+  you have not sampled the segmentally sclerotic one. Effacement on electron
+  microscopy confirms podocyte injury is present, but you still need at least
+  25 glomeruli to be confident you are not missing focal sclerosis. Thin
+  basement membrane nephropathy teaches the importance of quantitative rigor:
+  you cannot eyeball glomerular basement membrane thickness; it must be
+  measured against age-matched norms, using foot process width as an internal
+  reference when precise morphometry is limited. Both entities remind you
+  that normal light microscopy plus an abnormal clinical picture — nephrotic
+  syndrome or persistent hematuria — is itself an indication for meticulous
+  electron microscopy examination, not a reason to defer or abbreviate it.
 
 normal_lm_table:
   - feature: "Light microscopy"
@@ -57,7 +63,7 @@ normal_lm_table:
     mcd: "At least 25 glomeruli to exclude unsampled focal segmental glomerulosclerosis"
     tbmn: "Not applicable — but requires multiple glomerular basement membrane measurements for a valid average"
   - feature: "Underlying defect"
-    mcd: "Presumed immune-mediated/functional"
+    mcd: "Presumed immune-mediated/functional (permeability factor)"
     tbmn: "Structural — COL4-alpha-3/alpha-4 heterozygous mutation"
   - feature: "Classic presentation"
     mcd: "Nephrotic syndrome, sudden onset"
@@ -68,6 +74,9 @@ normal_lm_table:
   - feature: "Course"
     mcd: "Does not cause progressive chronic kidney disease; steroid-responsive"
     tbmn: "Usually benign, but approximately 30% develop late renal insufficiency/hypertension; approximately 40% are Alport carriers"
+  - feature: "Superimposed lesion risk"
+    mcd: "Not applicable"
+    tbmn: "Focal segmental glomerulosclerosis may develop if nephrotic-range proteinuria appears"
 
 normal_lm_bottom_line: >-
   A normal-looking glomerulus on light microscopy is a starting point, not an
@@ -77,15 +86,18 @@ normal_lm_bottom_line: >-
 mesangial_only: >-
   This category groups entities that share a light microscopic pattern of
   mesangial hypercellularity or proliferation without nodule formation. The
-  critical branch point is immunofluorescence: does the mesangial
-  proliferation correspond to immune complex deposits, or not? This single
-  question splits the differential into two clean diagnostic pathways.
+  critical branch point in the workup is immunofluorescence: does the
+  mesangial proliferation correspond to immune complex deposits, or not?
+  This single question splits the differential into two clean diagnostic
+  pathways.
 
   Branch 1 — mesangial proliferation with immune complex deposits. These
   three entities can all show IgA positivity by immunofluorescence, making
   them a classic trap. The discriminators are completeness of the
-  immunofluorescence panel, electron microscopy deposit location and shape,
-  and clinical context.
+  immunofluorescence panel (full house indicates lupus), electron microscopy
+  deposit location and shape (humps indicate infection-related; mesangial-only
+  indicates IgA nephropathy), and clinical context (systemic lupus
+  erythematosus history, recent infection, age and comorbidity profile).
 
 mesangial_only_table_1:
   - entity: "IgA nephropathy"
@@ -94,20 +106,20 @@ mesangial_only_table_1:
     clue: "Young patients; synpharyngitic hematuria"
   - entity: "Lupus nephritis class II"
     if: "Full house — IgG, IgM, IgA, C3, C1q"
-    em: "Tubuloreticular aggregates"
-    clue: "Systemic lupus erythematosus"
+    em: "Tubuloreticular aggregates (interferon footprint)"
+    clue: "Systemic lupus erythematosus; young women, African Americans"
   - entity: "Post-infectious or infection-related glomerulonephritis"
     if: "IgA- or C3-dominant, starry sky"
     em: "Subepithelial humps (taller than wide)"
-    clue: "Post or active infection"
+    clue: "Post or active infection; diabetics, comorbidities"
 
 mesangial_only_table_2:
   - entity: "Early diabetic nephropathy"
-    feature: "Precedes nodule formation; glomerular basement membrane thickening, diabetes history"
+    feature: "Precedes nodule formation; glomerular basement membrane thickening on electron microscopy, diabetes history, no immune deposits"
   - entity: "Focal segmental glomerulosclerosis"
-    feature: "Segmental sclerosis elsewhere, foot process effacement; no immune complexes"
+    feature: "Mesangial hypercellularity may be seen in some variants, but look for segmental sclerosis elsewhere and foot process effacement on electron microscopy; no immune complexes"
   - entity: "Nonspecific"
-    feature: "Wastebasket category; requires clinical correlation and exclusion of the above"
+    feature: "A wastebasket category — mesangial hypercellularity without a definable specific cause; requires clinical correlation and exclusion of the above before using this label"
 
 mesangial_only_bottom_line: >-
   In mesangial proliferation without nodules, immunofluorescence is the
@@ -118,40 +130,56 @@ mesangial_only_bottom_line: >-
 mesangial_endocapillary: >-
   This category groups entities that share a combined mesangial and
   endocapillary proliferative pattern on light microscopy — a more
-  active-appearing, often more acute-onset pattern. The unifying light
-  microscopy theme means these five entities cannot be separated by light
-  microscopy alone. The differential hinges on immunofluorescence pattern
-  and electron microscopy ultrastructure. The monoclonal versus polyclonal
-  split is the fastest first branch point. Proliferative
+  active-appearing, often more acute-onset pattern than mesangial-only
+  proliferation. The unifying light microscopy theme, with endocapillary
+  hypercellularity and sometimes crescents, means these five entities cannot
+  be separated from each other by light microscopy alone. The differential
+  hinges on immunofluorescence pattern (monoclonal versus polyclonal,
+  dominant immunoglobulin) and electron microscopy ultrastructure (deposit
+  location, shape, and size), always interpreted alongside clinical context.
+
+  The monoclonal versus polyclonal split is the fastest first branch point.
+  Monoclonal immunofluorescence leads to proliferative glomerulonephritis
+  with monoclonal immunoglobulin deposits, which has no distinctive electron
+  microscopy, or cryoglobulinemic glomerulonephritis, which has distinctive
+  microtubules. Polyclonal immunofluorescence leads to fibrillary
+  glomerulonephritis (fibrils), post-infectious glomerulonephritis (humps),
+  or lupus (full house with multiple immunoglobulin and complement
+  components).
+
+  Unlike the mesangial-only category, where immunofluorescence often
+  provides the decisive clue, this category leans more heavily on electron
+  microscopy ultrastructure to separate look-alikes. Proliferative
   glomerulonephritis with monoclonal immunoglobulin deposits is the outlier
-  — the only entity here that is a true morphologic chameleon,
+  — it is the only entity here that is a true morphologic chameleon,
   indistinguishable from ordinary immune-complex glomerulonephritis by both
-  light microscopy and electron microscopy. This is why routine practice
-  must include immunofluorescence light-chain and heavy-chain subclass
-  staining whenever an immune-complex pattern glomerulonephritis is
-  encountered.
+  light microscopy and electron microscopy. This is precisely why routine
+  practice must include immunofluorescence light-chain and heavy-chain
+  subclass staining whenever an immune-complex pattern
+  glomerulonephritis is encountered, rather than assuming polyclonality by
+  default.
 
 mesangial_endocapillary_table:
   - entity: "Lupus nephritis III/IV"
-    if: "Full house"
-    em: "Subendothelial deposits; tubuloreticular aggregates"
-    clue: "Lupus serologies"
+    if: "Full house — IgG, IgM, IgA, C3, C1q"
+    em: "Subendothelial deposits (plus or minus wire loops); tubuloreticular aggregates"
+    clue: "Lupus serologies; young women, African Americans"
   - entity: "Cryoglobulinemic glomerulonephritis"
-    if: "IgM-dominant or mixed, kappa-dominant"
-    em: "Microtubular substructures, 25–35 nm, hollow centers"
-    clue: "Hepatitis C"
+    if: "IgM-dominant or mixed IgG/IgM, kappa-dominant"
+    em: "Microtubular substructures, 25–35 nm, hollow centers; intraluminal cryoplugs on light microscopy"
+    clue: "Hepatitis C (type 2, most common renal-involving type); skin and glomerular vasculitis"
   - entity: "Post-infectious glomerulonephritis"
-    if: "C3-dominant, starry sky"
-    em: "Subepithelial humps, taller than wide"
-    clue: "Preceding infection"
+    if: "C3-dominant (plus or minus IgG), starry sky"
+    em: "Subepithelial humps — taller than wide, no basement membrane reaction"
+    clue: "Preceding infection (classically streptococcal); latent period; low complement; children more than adults for good prognosis"
   - entity: "Fibrillary glomerulonephritis"
     if: "Polyclonal IgG plus C3, smudgy"
-    em: "Fibrils, 12–20 nm, randomly arranged"
-    clue: "DNAJB9 positive; poor prognosis"
+    em: "Fibrils, 12–20 nm, randomly arranged, nonbranching"
+    clue: "DNAJB9 positive; approximately 25% show crescentic or rapidly progressive variant; poor prognosis (approximately 50% end-stage renal disease by 4 years)"
   - entity: "Proliferative glomerulonephritis with monoclonal immunoglobulin deposits"
-    if: "Monoclonal IgG3 kappa"
-    em: "Mimics ordinary immune-complex glomerulonephritis"
-    clue: "Middle-aged white women; recurs early post-transplant"
+    if: "Monoclonal — single light chain plus single IgG subclass (usually IgG3 kappa)"
+    em: "Mimics ordinary immune-complex glomerulonephritis — no distinctive ultrastructure"
+    clue: "Middle-aged white women; monoclonal gammopathy of renal significance (not myeloma precursor); recurs early post-transplant"
 
 mesangial_endocapillary_bottom_line: >-
   In combined mesangial and endocapillary proliferation, monoclonal versus
@@ -160,32 +188,59 @@ mesangial_endocapillary_bottom_line: >-
   chameleon, diagnosable solely by monoclonality.
 
 mpgn_pattern: >-
-  The morphologic definition is deliberately broad and mechanism-agnostic:
-  mesangial hypercellularity, with or without endocapillary hypercellularity,
-  and splitting (double contour) of the glomerular basement membrane. This
-  single pattern is the common downstream output of at least five
-  mechanistically distinct disease categories. Note that endocapillary
-  hypercellularity is explicitly optional. A biopsy can qualify as showing a
-  membranoproliferative pattern based on mesangial hypercellularity and
-  double contours alone. Thrombotic microangiopathy is cross-referenced to
-  vascular lesions rather than elaborated here, because its primary
-  pathogenesis is vascular and endothelial.
+  This confirms and consolidates the membranoproliferative glomerulonephritis
+  pattern as the final, unifying light microscopy category in the
+  proliferative glomerular lesions series. The morphologic definition is
+  deliberately broad and mechanism-agnostic: mesangial hypercellularity,
+  with or without endocapillary hypercellularity, and splitting (double
+  contour) of the glomerular basement membrane. This single pattern is the
+  common downstream output of at least five mechanistically distinct disease
+  categories, which is precisely why immunofluorescence and sometimes
+  electron microscopy are indispensable to sort them out.
+
+  Note that endocapillary hypercellularity is explicitly optional. A biopsy
+  can qualify as showing a membranoproliferative pattern based on mesangial
+  hypercellularity and double contours alone, without active endocapillary
+  proliferation. This matters because the pattern spans a spectrum from more
+  active and proliferative to more chronic and remodeling appearances.
+
+  The membranoproliferative pattern effectively absorbs and re-contextualizes
+  nearly every entity already covered: lupus nephritis III/IV in the
+  autoimmune branch; cryoglobulinemic glomerulonephritis and proliferative
+  glomerulonephritis with monoclonal immunoglobulin deposits in the
+  paraprotein deposition branch; post-infectious glomerulonephritis and
+  IgA-dominant infection-related glomerulonephritis in the infection-related
+  branch, though these more classically show a purely endocapillary
+  proliferative or exudative pattern rather than double contours; C3
+  glomerulonephritis and dense deposit disease in the complement regulatory
+  protein branch; and fibrillary glomerulonephritis, which is technically
+  distinct with organized fibrillary deposits rather than a true
+  double-contour pattern, but shares the polyclonal IgG/C3 immunofluorescence
+  motif.
+
+  Thrombotic microangiopathy is explicitly cross-referenced to vascular
+  lesions rather than fully elaborated here. This is a deliberate
+  classification choice: thrombotic microangiopathy can produce a
+  membranoproliferative-like pattern as chronic changes from endothelial
+  injury, but its primary pathogenesis is vascular and endothelial, not
+  glomerular and immune-complex-mediated, so it is taxonomically housed
+  elsewhere despite occasionally mimicking this pattern morphologically.
 
 mpgn_pattern_table:
   - category: "Autoimmune disease"
-    diseases: "Lupus, Sjogren syndrome, rheumatoid arthritis"
+    diseases: "Lupus, Sjogren syndrome, rheumatoid arthritis, mixed connective tissue disease"
+    if: "Polyclonal immunoglobulin plus C3/C1q (full house in lupus)"
+  - category: "Infection-related glomerulonephritis"
+    diseases: "Hepatitis B/C, endocarditis, shunt infections, visceral abscesses, leprosy, malaria, schistosomiasis, mycoplasma"
     if: "Polyclonal immunoglobulin plus C3/C1q"
-  - category: "Infection-related"
-    diseases: "Hepatitis B/C, endocarditis, abscesses, leprosy, malaria"
-    if: "Polyclonal immunoglobulin plus C3/C1q"
-  - category: "Complement regulatory abnormalities"
+  - category: "Complement regulatory protein abnormalities"
     diseases: "C3 glomerulonephritis, dense deposit disease"
-    if: "Isolated C3"
+    if: "Isolated C3 (no significant immunoglobulin); split by electron microscopy"
   - category: "Thrombotic microangiopathy"
     diseases: "Covered separately under vascular lesions"
     if: "Fibrin, no immunoglobulin"
   - category: "Paraprotein deposition diseases"
-    diseases: "Cryoglobulinemia, monoclonal immunoglobulin deposition disease"
+    diseases: "Cryoglobulinemia (types 1/2), monoclonal immunoglobulin deposition disease, immunotactoid/fibrillary glomerulopathy"
     if: "Monoclonal immunoglobulin plus C3/C1q"
 
 mpgn_pattern_bottom_line: >-
@@ -194,29 +249,70 @@ mpgn_pattern_bottom_line: >-
   immunofluorescence, electron microscopy, and clinical/serologic workup.
 
 mpgn_if_classification: >-
-  Immunofluorescence is the master branch point that sorts this single light
-  microscopy pattern into three fundamentally different disease categories.
+  This is the capstone organizing principle for everything covered across
+  the lupus, cryoglobulinemic, post-infectious, fibrillary, monoclonal
+  immunoglobulin deposition, C3 glomerulonephritis, and dense deposit
+  disease discussions. The membranoproliferative pattern by light microscopy
+  is a shared morphologic endpoint reached by mechanistically distinct
+  diseases. Immunofluorescence is the master branch point that sorts this
+  single light microscopy pattern into three fundamentally different disease
+  categories, and this is the single most efficient framework for
+  approaching any membranoproliferative-pattern biopsy in practice.
 
-  Branch 1 — polyclonal immunoglobulin plus C3/C1q: immune complex disease.
-  Infection-related causes include hepatitis B, hepatitis C, endocarditis,
+  Branch 1 — polyclonal immunoglobulin plus C3/C1q, indicating immune complex
+  disease. Genuine antibody-antigen immune complexes, polyclonal in nature,
+  driven by an external trigger (infection) or systemic autoimmune process.
+  Infection-related examples include hepatitis B, hepatitis C, endocarditis,
   shunt infections, visceral abscesses, leprosy, malaria, schistosomiasis,
-  and mycoplasma. Autoimmune-related causes include systemic lupus
+  and mycoplasma. Autoimmune-related examples include systemic lupus
   erythematosus, Sjogren syndrome, rheumatoid arthritis, and mixed connective
   tissue disease. Membranoproliferative glomerulonephritis is very often
-  secondary, not idiopathic.
+  secondary, not idiopathic. A biopsy with polyclonal full-house-type
+  immunofluorescence should trigger a broad infectious and autoimmune
+  serologic workup, not an assumption of primary or idiopathic
+  membranoproliferative glomerulonephritis, a diagnosis that has become far
+  less common as more secondary causes are identified.
 
-  Branch 2 — monoclonal immunoglobulin plus C3/C1q: paraprotein deposition
-  disease. The clonal process may be monoclonal gammopathy of undetermined
-  significance, Waldenstrom macroglobulinemia, chronic lymphocytic leukemia,
-  or low-grade B-cell lymphoma. Specific patterns include cryoglobulinemia
-  types 1 and 2, immunotactoid/fibrillary glomerulopathy, and monoclonal
-  immunoglobulin deposition disease.
+  Branch 2 — monoclonal immunoglobulin plus C3/C1q, indicating paraprotein
+  deposition disease. Immune complexes or deposits containing a clonal
+  immunoglobulin component, reflecting an underlying clonal B-cell or plasma
+  cell process spanning the full monoclonal gammopathy of renal
+  significance-to-malignancy spectrum. The clonal process may be monoclonal
+  gammopathy of undetermined significance, Waldenstrom macroglobulinemia,
+  chronic lymphocytic leukemia, or low-grade B-cell lymphoma. Specific
+  disease patterns include cryoglobulinemia types 1 and 2,
+  immunotactoid/fibrillary glomerulopathy, and monoclonal immunoglobulin
+  deposition disease, including light chain deposition disease, heavy chain
+  deposition disease, and light-and-heavy chain deposition disease. This
+  branch directly incorporates proliferative glomerulonephritis with
+  monoclonal immunoglobulin deposits, light chain deposition disease, and
+  cryoglobulinemic glomerulonephritis into a single unifying concept — all
+  are driven by a clonal immunoglobulin product, even though the underlying
+  hematologic disease may range from undetectable or monoclonal gammopathy
+  of undetermined significance-level to overt lymphoma or Waldenstrom
+  macroglobulinemia. This reinforces why light-chain and heavy-chain
+  subclass immunofluorescence typing is essential whenever monoclonality is
+  suspected.
 
-  Branch 3 — no immunoglobulin: complement- or fibrin-mediated disease.
-  Fibrin only indicates chronic thrombotic microangiopathy. C3 only indicates
-  dense deposit disease or C3 glomerulonephritis, distinguished by electron
-  microscopy (intramembranous ribbon-like versus immune complex-type
-  deposits).
+  Branch 3 — no immunoglobulin, indicating complement- or fibrin-mediated
+  disease. No significant immunoglobulin at all; the disease is driven by
+  either complement dysregulation or coagulation and endothelial injury, not
+  by any antibody-based process. Fibrin only indicates chronic thrombotic
+  microangiopathy. C3 only indicates dense deposit disease or C3
+  glomerulonephritis, distinguished from each other by electron microscopy
+  (intramembranous ribbon-like versus immune complex-type deposits). This
+  branch is the most conceptually distinct: no immunoglobulin means no
+  antibody-driven process at all. Fibrin positivity should redirect the
+  entire workup toward a thrombotic microangiopathy etiology rather than any
+  form of glomerulonephritis. C3-only findings split into dense deposit
+  disease versus C3 glomerulonephritis purely by electron microscopy
+  ultrastructure.
+
+  A single light microscopy pattern maps to at least three entirely
+  different diagnostic and therapeutic pathways, and immunofluorescence is
+  the indispensable tool that separates them. Light microscopy alone is
+  never sufficient, and even within each branch, further discrimination
+  requires clinical correlation or electron microscopy.
 
 mpgn_if_classification_bottom_line: >-
   Immunofluorescence is the master branch point for the membranoproliferative
@@ -225,28 +321,56 @@ mpgn_if_classification_bottom_line: >-
   complement dysregulation or thrombotic microangiopathy.
 
 crescentic: >-
-  Crescentic glomerulonephritis is a shared light microscopy endpoint
-  produced by three fundamentally distinct immunopathogenic mechanisms. The
-  four ANCA-associated subgroups share identical histopathology.
-  Subclassification depends entirely on extrarenal clinical features and ANCA
-  antigen specificity (MPO versus PR3). Drug-induced ANCA-associated
-  vasculitis is histologically identical to primary disease — only a
-  temporal drug history distinguishes them. A biopsy showing necrosis or
-  crescents disproportionate to immune complex burden in a lupus patient
-  should trigger ANCA serology.
+  Crescentic glomerulonephritis is a shared light microscopy endpoint,
+  often with fibrinoid necrosis, produced by three fundamentally distinct
+  immunopathogenic mechanisms. This is the final, unifying capstone
+  framework for the entire proliferative lesions series — nearly every
+  entity covered across lupus, post-infectious glomerulonephritis, IgA
+  nephropathy and Henoch-Schonlein purpura, anti-glomerular basement membrane
+  disease, and ANCA vasculitis can produce crescents, and
+  immunofluorescence is the master sorting tool.
+
+  Immunofluorescence alone sorts a crescentic biopsy into one of these three
+  buckets almost instantly. Granular leads to immune complex disease, then
+  correlate with the specific immunofluorescence sub-pattern — full house,
+  IgA-dominant, C3-dominant, monoclonal — to identify the exact entity.
+  Linear leads to anti-glomerular basement membrane disease. Negative or
+  pauci-immune leads to ANCA vasculitis, then pursue MPO/PR3 serology and
+  extrarenal clinical correlation to subclassify.
+
+  The four ANCA-associated subgroups are granulomatosis with polyangiitis
+  (formerly Wegener granulomatosis), microscopic polyangiitis, eosinophilic
+  granulomatosis with polyangiitis (formerly Churg-Strauss syndrome), and
+  renal-limited ANCA vasculitis. Histopathology is identical across all four
+  subgroups. Subclassification depends entirely on extrarenal clinical
+  features and ANCA antigen specificity (MPO versus PR3), not on the kidney
+  biopsy itself.
+
+  Two critical teaching points. First, drug-induced ANCA-associated
+  vasculitis is histologically identical to primary ANCA-associated
+  vasculitis; only a temporal drug history distinguishes them, and the
+  pauci-immune category is not synonymous with idiopathic. Second,
+  categories can overlap within a single patient: the lupus-ANCA overlap
+  phenomenon demonstrates that a biopsy showing necrosis or crescents
+  disproportionate to immune complex burden in a lupus patient should
+  trigger ANCA serology. The three-category framework is a useful sorting
+  tool, but real patients can straddle categories, and recognizing a
+  mismatch between immunofluorescence findings and the severity of necrosis
+  or crescents is itself a diagnostic clue pointing toward a possible
+  overlap syndrome.
 
 crescentic_table:
   - category: "Immune complex-mediated"
     if: "Granular (lumpy-bumpy)"
-    basis: "Antigen-antibody complexes"
-    entities: "Lupus nephritis III/IV, post-infectious glomerulonephritis, IgA nephropathy, cryoglobulinemic glomerulonephritis, fibrillary glomerulonephritis"
-  - category: "Anti-glomerular basement membrane"
+    basis: "Antigen-antibody complexes, polyclonal or monoclonal"
+    entities: "Lupus nephritis III/IV, post-infectious glomerulonephritis, IgA nephropathy and Henoch-Schonlein purpura, cryoglobulinemic glomerulonephritis, fibrillary glomerulonephritis, proliferative glomerulonephritis with monoclonal immunoglobulin deposits"
+  - category: "Anti-glomerular basement membrane antibody-mediated"
     if: "Linear"
-    basis: "Antibody against type IV collagen alpha-3"
+    basis: "Antibody against intrinsic glomerular basement membrane structural antigen (NC1 domain, type IV collagen alpha-3)"
     entities: "Anti-glomerular basement membrane disease / Goodpasture syndrome"
   - category: "Pauci-immune (ANCA-associated)"
     if: "Negative or scant"
-    basis: "ANCA-driven neutrophil-mediated injury"
+    basis: "No significant immunoglobulin or complement deposition; ANCA-driven neutrophil-mediated vessel injury"
     entities: "Granulomatosis with polyangiitis, microscopic polyangiitis, eosinophilic granulomatosis with polyangiitis, renal-limited ANCA vasculitis"
 
 crescentic_bottom_line: >-
@@ -255,24 +379,68 @@ crescentic_bottom_line: >-
   sorts it into granular, linear, or pauci-immune categories.
 
 fsgs: >-
-  Focal segmental glomerulosclerosis is a clinicopathologic syndrome, not one
-  disease, splitting into five morphologic variants. The most important
-  discriminating ultrastructural clue is the extent of foot process
-  effacement: extensive in idiopathic/primary disease, typically subtotal in
-  secondary disease, though exceptions occur. Secondary focal segmental
-  glomerulosclerosis, not otherwise specified, is divided by whether nephron
-  number was initially reduced or initially normal. Category A, initially
-  reduced: unilateral renal agenesis, surgical ablation, oligomeganephronia,
-  chronic pyelonephritis/reflux nephropathy, hypertension. Category B,
-  initially normal but overburdened: morbid obesity, diabetes mellitus,
-  congestive heart disease. Both converge on the same final common pathway
-  of compensatory hyperfiltration. Alport syndrome reaches the same endpoint
-  through structural glomerular basement membrane failure at the level of
-  the individual nephron.
+  Focal segmental glomerulosclerosis is not one disease. It is a
+  clinicopathologic syndrome unified by a shared light microscopy and
+  clinical definition, but splitting into five morphologic variants, each
+  with its own primary or idiopathic versus secondary etiologic spectrum.
+  The single most important discriminating ultrastructural clue across this
+  entire framework is the extent of foot process effacement: extensive in
+  idiopathic or primary disease, similar in degree to minimal change
+  disease; typically subtotal (less than 50%) in secondary disease, though
+  exceptions occur. This directly echoes the very first lesson of this
+  framework — minimal change disease's diagnostic reliance on extensive
+  effacement — and confirms that the degree of foot process effacement is a
+  genuine diagnostic clue to primary versus secondary focal segmental
+  glomerulosclerosis, not just a nonspecific electron microscopy finding.
+  However, the caveat that secondary focal segmental glomerulosclerosis may
+  occasionally show extensive effacement means this rule is a guide, not an
+  absolute rule; always integrate with clinical context.
+
+  Note the inverse etiologic gradients across variants: tip lesion skews
+  idiopathic, perihilar skews secondary, collapsing spans both with a rich
+  secondary differential, and not otherwise specified is the default
+  everything-else category spanning the widest etiologic range. Recognizing
+  which variant you are looking at should immediately narrow your etiologic
+  thinking before you even reach for clinical history.
+
+  Secondary focal segmental glomerulosclerosis, not otherwise specified, is
+  divided by whether the nephron number was initially reduced or initially
+  normal. Category A, initially reduced nephron number: nephron mass is
+  diminished from the outset, and the surviving nephrons hyperfilter and
+  eventually develop secondary focal segmental glomerulosclerosis. Causes
+  include unilateral renal agenesis, surgical ablation (nephrectomy),
+  oligomeganephronia, chronic pyelonephritis and reflux nephropathy, and
+  hypertension. Category B, initially normal nephron number: nephron mass
+  starts normal, but a systemic metabolic or hemodynamic burden causes each
+  nephron to work harder than its normal capacity, eventually producing the
+  same secondary endpoint. Causes include morbid obesity, diabetes mellitus
+  (though diabetic nephropathy itself is typically classified separately
+  when classic Kimmelstiel-Wilson nodules are present), and congestive heart
+  disease.
+
+  The unifying mechanistic concept across all secondary focal segmental
+  glomerulosclerosis, not otherwise specified, causes, regardless of
+  category: whether nephron number starts reduced or normal but
+  overburdened, the final common pathway is the same — compensatory
+  hyperfiltration in the glomeruli that remain functionally active, leading
+  to maladaptive glomerular hypertrophy and eventual segmental sclerosis.
+  This is the single mechanistic thread connecting reflux nephropathy,
+  hypertension, and obesity.
+
+  Alport syndrome does not appear explicitly in either category. Its
+  secondary focal segmental glomerulosclerosis arises through a third
+  mechanism: not reduced nephron number, and not normal nephron number under
+  external metabolic or hemodynamic stress, but rather structural glomerular
+  basement membrane failure at the level of the individual nephron, causing
+  progressive glomerular dysfunction that eventually manifests as focal
+  segmental glomerulosclerosis, not otherwise specified. This two-category
+  framework, while highly useful, is not fully exhaustive — structural and
+  genetic collagen defects represent a distinct third pathway to the same
+  endpoint.
 
 fsgs_table:
   - variant: "Collapsing glomerulopathy"
-    etiology: "Primary or secondary (HIV, parvovirus B19, interferon, pamidronate, cocaine, lupus)"
+    etiology: "Primary or idiopathic, or secondary: infections (HIV, parvovirus B19); drugs (interferon, pamidronate); severe ischemia (cocaine); autoimmune (lupus)"
   - variant: "Tip lesion"
     etiology: "Mostly idiopathic; best prognosis, minimal change disease-like"
   - variant: "Cellular"
@@ -280,7 +448,7 @@ fsgs_table:
   - variant: "Perihilar"
     etiology: "Mostly secondary (obesity, anabolic steroids)"
   - variant: "Not otherwise specified"
-    etiology: "Idiopathic or secondary"
+    etiology: "Idiopathic or secondary; includes reflux nephropathy, Alport syndrome, hypertensive nephrosclerosis"
 
 fsgs_bottom_line: >-
   Focal segmental glomerulosclerosis is a clinicopathologic syndrome, not a
@@ -289,15 +457,29 @@ fsgs_bottom_line: >-
   secondary causes converge on compensatory hyperfiltration.
 
 nodular: >-
-  Distinct entities converge on a single light microscopic pattern: nodular
-  mesangial expansion, with or without hypercellularity. Recognizing the
-  pattern is easy; subclassifying it requires a systematic special stain,
-  immunofluorescence, electron microscopy, and clinical correlation workflow.
+  This is one of the highest-yield differential diagnosis frameworks in
+  renal pathology. Distinct entities converge on a single light microscopic
+  pattern: nodular mesangial expansion, with or without hypercellularity.
+  Recognizing the pattern is easy; subclassifying it requires a systematic
+  special stain, immunofluorescence, electron microscopy, and clinical
+  correlation workflow, since hematoxylin and eosin alone cannot reliably
+  separate them.
+
   Practical workup when you encounter nodular mesangial sclerosis on
-  hematoxylin and eosin: clinical correlation first, then Congo red, then
-  immunofluorescence for light chain restriction, then electron microscopy
-  fibril and deposit morphology, then DNAJB9 immunohistochemistry if
-  fibrillary glomerulonephritis is suspected, and exclude diabetes
+  hematoxylin and eosin. Clinical correlation first: diabetes history?
+  smoking? paraprotein? Then Congo red: positive indicates amyloid, to be
+  subtyped by immunofluorescence, electron microscopy, and mass
+  spectrometry. Then immunofluorescence for light chain restriction:
+  monoclonal indicates light chain deposition disease, or amyloid if Congo
+  red positive; polyclonal IgG and C3 indicates fibrillary
+  glomerulonephritis. Then electron microscopy fibril and deposit
+  morphology: organized fibrils at 7 to 12 nm indicate amyloid, 12 to 20 nm
+  indicate fibrillary glomerulonephritis, amorphous punctate deposits
+  indicate light chain deposition disease, and no deposits with just thick
+  glomerular basement membrane indicate diabetic nephropathy or
+  immunoglobulin deposition disease with non-amyloid organized deposits.
+  Then DNAJB9 immunohistochemistry if fibrillary glomerulonephritis is
+  suspected and electron microscopy is equivocal. Finally, exclude diabetes
   clinically before signing out immunoglobulin deposition disease with
   non-amyloid organized deposits.
 
@@ -309,9 +491,9 @@ nodular_table:
     clue: "Diabetes history; afferent and efferent hyalinosis"
   - entity: "Light chain deposition disease"
     congo: "Negative"
-    if: "Monoclonal kappa"
+    if: "Monoclonal kappa (glomerular basement membrane and tubular basement membrane)"
     em: "Amorphous, punctate deposits"
-    clue: "Monoclonal gammopathy of renal significance / myeloma"
+    clue: "Monoclonal gammopathy of undetermined significance / monoclonal gammopathy of renal significance / myeloma"
   - entity: "AL amyloidosis"
     congo: "Positive"
     if: "Monoclonal kappa or lambda"
@@ -324,7 +506,7 @@ nodular_table:
     clue: "DNAJB9 positive; approximately 50% end-stage renal disease by 4 years"
   - entity: "Immunoglobulin deposition disease with non-amyloid organized deposits"
     congo: "Negative"
-    if: "Nonspecific IgG/albumin"
+    if: "Nonspecific IgG and albumin"
     em: "Similar to diabetic nephropathy"
     clue: "No diabetes; smoking-associated"
 
@@ -336,8 +518,13 @@ nodular_bottom_line: >-
 
 mgp_amyloid_fgn: >-
   Membranous glomerulopathy, amyloidosis, and fibrillary glomerulonephritis
-  can all present with nephrotic-range proteinuria. The table compares their
-  demographics, clinical course, and post-transplant behaviour.
+  can all present with nephrotic-range proteinuria, and each can recur after
+  transplantation. Hematuria favours fibrillary glomerulonephritis and is
+  uncommon in membranous glomerulopathy, which is the key clinical
+  discriminator. Amyloidosis is distinguished by Congo red positivity and
+  by fibril diameter on electron microscopy. The three entities differ
+  substantially in demographic profile, clinical course, and post-transplant
+  behaviour, as summarized in the table.
 
 mgp_amyloid_fgn_table:
   - feature: "Most common demographic"
@@ -349,7 +536,7 @@ mgp_amyloid_fgn_table:
     amyloid: "Variable"
     fgn: "Common — key discriminator from membranous glomerulopathy"
   - feature: "Course"
-    mgp: "Rule of thirds (one-third recover, one-third persist, one-third end-stage renal disease)"
+    mgp: "Rule of thirds: one-third recover, one-third persist, one-third end-stage renal disease"
     amyloid: "Poor if systemic (cardiac) involvement"
     fgn: "Approximately 50% end-stage renal disease by 4 years"
   - feature: "Recurs post-transplant"
