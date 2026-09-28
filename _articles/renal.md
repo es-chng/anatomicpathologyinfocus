@@ -4,7 +4,7 @@ authors:
   - given: "Ewe Seng"
     family: "Ch'ng"
     affiliation: "Universiti Sains Malaysia, Penang, Malaysia"
-corresponding_email: "chngeweseng@hotmail.com"
+corresponding_email: "eweseng@usm.my"
 volume: 1
 issue: 1
 order: 1
@@ -231,20 +231,16 @@ membranous_pattern: >-
   secondary settings: NELL1 (associated with malignancy and sarcoidosis in
   some series), exostosin 1 and 2 (associated with autoimmune disease,
   particularly lupus), semaphorin 3B (pediatric), and others including
-  protocadherin 7 and contactin 1. In most cases, however, the distinction
-  between primary and secondary membranous nephropathy still rests on
-  clinical and serologic evaluation, including hepatitis B and C, syphilis,
-  drugs, malignancy, and autoimmune disease. Lupus class V is a distinct
-  setting with full-house immunofluorescence and often coexisting
-  proliferative features.
+  protocadherin 7 and contactin 1. In most cases, the distinction between
+  primary and secondary membranous nephropathy still rests on clinical and
+  serologic evaluation, including hepatitis B and C, syphilis, drugs,
+  malignancy, and autoimmune disease. Lupus class V is a distinct setting
+  with full-house immunofluorescence and often coexisting proliferative
+  features.
 
-  IgG subclass and the mass spectrometry era. Primary membranous
-  nephropathy is usually IgG4-dominant. Secondary forms often show a
-  different subclass pattern, and this can be a useful discriminator when
-  the clinical setting is unclear. Amyloidosis, by contrast, is not a
-  membranous pattern at all — it belongs to the nodular and non-nodular
-  mesangial deposition patterns. When amyloid is suspected, typing by mass
-  spectrometry is now standard.
+  IgG subclass. Primary membranous nephropathy is usually IgG4-dominant.
+  Secondary forms often show a different subclass pattern, and this can be a
+  useful discriminator when the clinical setting is unclear.
 
 membranous_pattern_table:
   - entity: "Primary membranous nephropathy"
@@ -274,14 +270,9 @@ membranous_pattern_table:
 
 membranous_pattern_bottom_line: >-
   Membranous nephropathy is defined by subepithelial deposits and granular
-  capillary wall IgG and C3; antigen testing (PLA2R, THSD7A, exostosin,
-  NELL1) and IgG subclass refine the primary versus secondary distinction,
-  but clinical and serologic evaluation remains essential.
-
-membranous_pattern_bottom_line_short: >-
-  Membranous nephropathy is defined by subepithelial deposits and granular
-  IgG and C3; antigen testing refines but does not replace clinical
-  evaluation.
+  capillary wall IgG and C3; antigen testing and IgG subclass refine the
+  primary versus secondary distinction, but clinical evaluation remains
+  essential.
 
 mpgn_pattern: >-
   PART 5 — Membranoproliferative Glomerulonephritis Pattern.
@@ -294,9 +285,7 @@ mpgn_pattern: >-
 
   Note that endocapillary hypercellularity is explicitly optional. A biopsy
   can qualify as showing a membranoproliferative pattern based on mesangial
-  hypercellularity and double contours alone. This matters because the
-  pattern spans a spectrum from active and proliferative to chronic and
-  remodelling.
+  hypercellularity and double contours alone.
 
   Two important pitfalls in this section. First, thrombotic microangiopathy
   can produce a membranoproliferative-like pattern as chronic changes from
@@ -311,11 +300,9 @@ mpgn_pattern: >-
   The single decisive teaching point to carry forward: whenever double
   contours or glomerular basement membrane splitting are seen on light
   microscopy, the diagnostic task is never complete at the light microscopy
-  level. Immunofluorescence (immunoglobulin clonality, dominant component),
-  electron microscopy (deposit location and character), and clinical and
-  serologic correlation (infection screen, autoimmune serologies,
-  paraprotein workup, complement studies) are all required to assign the
-  correct final diagnosis and treatment pathway.
+  level. Immunofluorescence, electron microscopy, and clinical and serologic
+  correlation are all required to assign the correct final diagnosis and
+  treatment pathway.
 
 mpgn_pattern_table:
   - category: "Autoimmune disease"
@@ -371,16 +358,14 @@ mpgn_if_classification: >-
   microscopy. Two pitfalls deserve emphasis in this branch. First,
   post-infectious glomerulonephritis can be C3-dominant and may be
   misclassified into this branch if the clinical context is not considered.
-  Second, masked monoclonal deposits can produce apparent
-  C3-dominance on routine immunofluorescence and are revealed by pronase
-  digestion.
+  Second, masked monoclonal deposits can produce apparent C3-dominance on
+  routine immunofluorescence and are revealed by pronase digestion.
 
 mpgn_if_classification_bottom_line: >-
-  Immunofluorescence is the master branch point: polyclonal points to
-  infection or autoimmune disease, monoclonal points to paraprotein
-  deposition, and C3-dominant without immunoglobulin points to complement
-  dysregulation, with post-infectious glomerulonephritis and masked
-  monoclonal deposits as the two pitfalls.
+  Immunofluorescence sorts the membranoproliferative pattern into three
+  branches: polyclonal, monoclonal, and C3-dominant without immunoglobulin;
+  post-infectious glomerulonephritis and masked monoclonal deposits are the
+  two pitfalls.
 
 crescentic: >-
   PART 7 — Crescentic Glomerulonephritis: The Master Three.
@@ -429,10 +414,9 @@ crescentic_table:
     entities: "Granulomatosis with polyangiitis, microscopic polyangiitis, eosinophilic granulomatosis with polyangiitis, renal-limited ANCA vasculitis; may coexist with anti-glomerular basement membrane disease"
 
 crescentic_bottom_line: >-
-  Crescent formation is a nonspecific, severe pattern of glomerular injury —
-  a final common pathway, not a diagnosis — and immunofluorescence alone
-  sorts it into granular, linear, or pauci-immune categories, with
-  double-positive anti-glomerular basement membrane and ANCA disease and
+  Crescent formation is a final common pathway, not a diagnosis;
+  immunofluorescence sorts it into granular, linear, or pauci-immune
+  categories, with double-positive anti-GBM and ANCA disease and
   false-positive linear staining as pitfalls.
 
 fsgs: >-
@@ -453,10 +437,9 @@ fsgs: >-
   risk variants), and undetermined. This framing is more clinically useful
   than morphology alone because it drives treatment.
 
-  The adaptive framework in structural terms. Secondary
-  focal segmental glomerulosclerosis through the adaptive pathway can be
-  divided by whether nephron number was initially reduced or initially
-  normal.
+  The adaptive framework in structural terms. Secondary focal segmental
+  glomerulosclerosis through the adaptive pathway can be divided by whether
+  nephron number was initially reduced or initially normal.
 
   Category A — initially reduced nephron number. Unilateral renal agenesis,
   surgical ablation, oligomeganephronia, chronic pyelonephritis and reflux
@@ -594,12 +577,10 @@ nodular_table:
     clue: "Autosomal dominant; fibronectin gene mutation"
 
 nodular_bottom_line: >-
-  Nodular mesangial expansion is a pattern, not a diagnosis; Congo red
-  separates amyloid from non-amyloid, immunofluorescence separates
-  monoclonal from polyclonal, electron microscopy separates fibrils from
-  microtubules from amorphous deposits, and idiopathic nodular
-  glomerulosclerosis is a distinct smoking-associated entity not to be
-  confused with the organized deposit diseases.
+  Nodular mesangial expansion is a pattern, not a diagnosis; Congo red,
+  immunofluorescence, and electron microscopy sort it into amyloidosis,
+  monoclonal deposition disease, fibrillary or immunotactoid disease, and
+  the smoking-associated entity.
 
 amyloid_typing: >-
   PART 10 — Amyloid Typing: A Required Step.
@@ -610,13 +591,13 @@ amyloid_typing: >-
   several amyloid types. The principal renal amyloid types are AL (light
   chain), AA (serum amyloid A, in chronic inflammatory disease), and
   ALECT2 (leukocyte chemotactic factor 2, reported most often in Hispanic
-  and Native American populations). Other rare types include
-  fibrinogen A alpha chain, transthyretin, gelsolin, and lysozyme.
-  Determining the type is essential because treatment differs fundamentally:
-  AL amyloidosis is treated by targeting the underlying plasma cell clone,
-  AA amyloidosis by controlling the inflammatory disease, and hereditary
-  forms have their own management pathways. Treatment directed at the wrong
-  amyloid type is ineffective.
+  and Native American populations). Other rare types include fibrinogen A
+  alpha chain, transthyretin, gelsolin, and lysozyme. Determining the type
+  is essential because treatment differs fundamentally: AL amyloidosis is
+  treated by targeting the underlying plasma cell clone, AA amyloidosis by
+  controlling the inflammatory disease, and hereditary forms have their own
+  management pathways. Treatment directed at the wrong amyloid type is
+  ineffective.
 
 amyloid_typing_bottom_line: >-
   Amyloidosis is not synonymous with AL; mass spectrometry is the reference
