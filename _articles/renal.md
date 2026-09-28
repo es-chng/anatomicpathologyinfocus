@@ -38,6 +38,11 @@ background: >-
   ISN/RPS classification of lupus nephritis with its activity and chronicity
   indices, should be applied in the final report where relevant.
 
+normal_lm_question: >-
+  If the glomeruli look normal on light microscopy, what must electron
+  microscopy show before the biopsy can be signed out, and when is the sample
+  too small to exclude focal disease?
+
 normal_lm: >-
   A glomerulus that looks entirely unremarkable on light microscopy does not
   mean the biopsy is normal. Both entities in this category are electron
@@ -104,6 +109,11 @@ normal_lm_bottom_line: >-
   A normal-looking glomerulus on light microscopy is a starting point, not an
   endpoint; minimal change disease and thin basement membrane nephropathy are
   both invisible without electron microscopy.
+
+mesangial_only_question: >-
+  When the only light microscopy finding is mesangial expansion without
+  nodules, how does immunofluorescence separate immune complex disease from
+  diabetic, sclerosing, and nonspecific causes?
 
 mesangial_only: >-
   This category groups entities that share mesangial expansion — matrix
@@ -175,6 +185,11 @@ mesangial_only_bottom_line: >-
   point: immune deposits point to IgA nephropathy, lupus, or infection-related
   disease (sometimes IgA-dominant); their absence points to early diabetic
   nephropathy, focal segmental glomerulosclerosis, or a nonspecific pattern.
+mesangial_endocapillary_question: >-
+  When mesangial and endocapillary proliferation coexist, which
+  immunofluorescence and electron microscopy findings separate the five main
+  entities that share this pattern?
+
 mesangial_endocapillary: >-
   This category groups entities that share combined mesangial and
   endocapillary proliferation on light microscopy, usually with a more acute
@@ -230,6 +245,11 @@ mesangial_endocapillary_bottom_line: >-
   polyclonal immunofluorescence is the fastest branch point; proliferative
   glomerulonephritis with monoclonal immunoglobulin deposits is the only
   chameleon, diagnosable solely by monoclonality.
+
+membranous_pattern_question: >-
+  When the capillary walls are diffusely thickened, how do target antigen
+  staining, IgG subclass, and clinical history distinguish primary from
+  secondary membranous nephropathy?
 
 membranous_pattern: >-
   The membranous pattern is one of the most common biopsy findings in adults
@@ -290,6 +310,10 @@ membranous_pattern_bottom_line: >-
   primary versus secondary distinction, but clinical evaluation — including
   exposure history — remains essential.
 
+mpgn_pattern_question: >-
+  When a biopsy shows double contours with mesangial hypercellularity, which
+  mechanistically distinct disease categories can produce this pattern?
+
 mpgn_pattern: >-
   The membranoproliferative pattern is defined by mesangial hypercellularity,
   with or without endocapillary hypercellularity, and splitting (double
@@ -336,6 +360,11 @@ mpgn_pattern_bottom_line: >-
   not a diagnosis; double contours should always trigger a full
   immunofluorescence, electron microscopy, and clinical or serologic workup.
 
+mpgn_if_classification_question: >-
+  How does immunofluorescence sort a membranoproliferative pattern into
+  polyclonal, monoclonal, and complement-mediated branches, and which pitfalls
+  can misassign a case?
+
 mpgn_if_classification: >-
   Immunofluorescence is the branch point that sorts the membranoproliferative
   pattern into three mechanistic families, as set out in the Mayo
@@ -372,6 +401,11 @@ mpgn_if_classification_bottom_line: >-
   branches: polyclonal, monoclonal, and C3-dominant or absent
   immunoglobulin; post-infectious glomerulonephritis and masked monoclonal
   deposits are the two pitfalls.
+
+crescentic_question: >-
+  When crescents are present, how does the immunofluorescence pattern identify
+  the underlying mechanism, and which overlap and false-positive findings must
+  be excluded?
 
 crescentic: >-
   Crescentic glomerulonephritis is a shared light microscopy endpoint
@@ -425,6 +459,11 @@ crescentic_bottom_line: >-
   immunofluorescence sorts it into granular, linear, or pauci-immune
   categories, with double-positive anti-GBM and ANCA disease and
   false-positive linear staining as pitfalls.
+
+fsgs_question: >-
+  When segmental sclerosis is found, how do clinical presentation, foot
+  process effacement, and morphologic variant distinguish primary, adaptive,
+  viral, drug-induced, and genetic disease?
 
 fsgs: >-
   Focal segmental glomerulosclerosis is a clinicopathologic syndrome, not one
@@ -484,6 +523,11 @@ fsgs_bottom_line: >-
   nephrotic syndrome with diffuse effacement points to primary disease,
   adaptive causes converge on hyperfiltration, and viral, drug-induced, and
   genetic causes reach the same lesion by other routes.
+nodular_question: >-
+  When the mesangium shows nodular expansion, how do Congo red,
+  immunofluorescence clonality, and electron microscopy substructure
+  distinguish the entities that share this pattern?
+
 nodular: >-
   Several distinct entities converge on nodular mesangial expansion, with or
   without hypercellularity. Subclassification requires a systematic special
@@ -588,6 +632,10 @@ nodular_bottom_line: >-
   immunotactoid disease, diabetic nephropathy, and the smoking-associated
   entity.
 
+amyloid_typing_question: >-
+  Once Congo red confirms amyloid, how should the amyloid type be determined,
+  and why does the type matter for treatment?
+
 amyloid_typing: >-
   Amyloidosis in the kidney is not synonymous with AL amyloidosis. Laser
   microdissection with mass spectrometry of the amyloid deposit is the
@@ -613,6 +661,10 @@ amyloid_typing_bottom_line: >-
   acceptable alternative where it is unavailable, and the type determines
   treatment.
 
+unified_algorithm_question: >-
+  How do the individual pattern-based pathways combine into a single
+  diagnostic sequence for any glomerular biopsy?
+
 unified_algorithm:
   - "Normal → electron microscopy: foot process effacement (minimal change disease) or glomerular basement membrane thinning (thin basement membrane nephropathy); report sampling adequacy"
   - "Mesangial expansion → immunofluorescence: immune complex present (IgA nephropathy, IgA-dominant infection-related glomerulonephritis, lupus class II, post-infectious) or absent (diabetic nephropathy, focal segmental glomerulosclerosis, nonspecific)"
@@ -627,6 +679,10 @@ unified_algorithm_bottom_line: >-
   rather than an answer, and the algorithm terminates only when
   immunofluorescence, electron microscopy, and clinical correlation agree on
   a single diagnosis.
+
+cross_reference_table_question: >-
+  Do the light microscopy pattern, immunofluorescence signature, electron
+  microscopy finding, and clinical clue all point to the same entity?
 
 cross_reference_table_intro: >-
   The following table summarizes the entities covered in this framework. It
