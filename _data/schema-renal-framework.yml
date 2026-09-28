@@ -1,11 +1,8 @@
 # Article schema: "renal-framework", a pattern-based renal pathology framework.
 #
-# All content lives in a single set of flat fields, in the order it appears on
-# the web page and in the PDF. Each section of the framework is unrolled into
-# its own field with its own boxed bottom line.
-#
-# Articles refer to it by file name:
-#   schema: schema-renal-framework
+# Tables are declared as shape: table fields with explicit column keys, matching
+# the convention used by schema-brief for the evidence table. Markdown pipe
+# tables inside shape: text fields are not parsed by the renderer.
 
 version: 1
 
@@ -28,6 +25,11 @@ fields:
     label: "Normal Glomeruli by Light Microscopy"
     shape: text
 
+  - key: normal_lm_table
+    label: "Minimal Change Disease Versus Thin Basement Membrane Nephropathy"
+    shape: table
+    columns: ["feature", "mcd", "tbmn"]
+
   - key: normal_lm_bottom_line
     label: "Bottom line"
     shape: text
@@ -37,6 +39,16 @@ fields:
   - key: mesangial_only
     label: "Mesangial Proliferation Without Nodules"
     shape: text
+
+  - key: mesangial_only_table_1
+    label: "Branch 1 — With Immune Complex Deposits"
+    shape: table
+    columns: ["entity", "if", "em", "clue"]
+
+  - key: mesangial_only_table_2
+    label: "Branch 2 — Without Immune Complex Deposits"
+    shape: table
+    columns: ["entity", "feature"]
 
   - key: mesangial_only_bottom_line
     label: "Bottom line"
@@ -48,6 +60,11 @@ fields:
     label: "Mesangial and Endocapillary Proliferation"
     shape: text
 
+  - key: mesangial_endocapillary_table
+    label: "The Five Entities"
+    shape: table
+    columns: ["entity", "if", "em", "clue"]
+
   - key: mesangial_endocapillary_bottom_line
     label: "Bottom line"
     shape: text
@@ -57,6 +74,11 @@ fields:
   - key: mpgn_pattern
     label: "Membranoproliferative Glomerulonephritis Pattern"
     shape: text
+
+  - key: mpgn_pattern_table
+    label: "Five Mechanistically Distinct Categories"
+    shape: table
+    columns: ["category", "diseases", "if"]
 
   - key: mpgn_pattern_bottom_line
     label: "Bottom line"
@@ -78,6 +100,11 @@ fields:
     label: "Crescentic Glomerulonephritis — The Master Three"
     shape: text
 
+  - key: crescentic_table
+    label: "Three Immunopathogenic Mechanisms"
+    shape: table
+    columns: ["category", "if", "basis", "entities"]
+
   - key: crescentic_bottom_line
     label: "Bottom line"
     shape: text
@@ -87,6 +114,11 @@ fields:
   - key: fsgs
     label: "Focal Segmental Glomerulosclerosis"
     shape: text
+
+  - key: fsgs_table
+    label: "Five Morphologic Variants"
+    shape: table
+    columns: ["variant", "etiology"]
 
   - key: fsgs_bottom_line
     label: "Bottom line"
@@ -98,6 +130,11 @@ fields:
     label: "Nodular Mesangial Expansion — Integrated Differential Diagnosis"
     shape: text
 
+  - key: nodular_table
+    label: "Five Entities Converging on Nodular Mesangial Expansion"
+    shape: table
+    columns: ["entity", "congo", "if", "em", "clue"]
+
   - key: nodular_bottom_line
     label: "Bottom line"
     shape: text
@@ -108,6 +145,11 @@ fields:
     label: "Membranous Glomerulopathy Versus Amyloidosis Versus Fibrillary Glomerulonephritis"
     shape: text
 
+  - key: mgp_amyloid_fgn_table
+    label: "Clinical and Morphologic Comparison"
+    shape: table
+    columns: ["feature", "mgp", "amyloid", "fgn"]
+
   - key: mgp_amyloid_fgn_bottom_line
     label: "Bottom line"
     shape: text
@@ -116,7 +158,7 @@ fields:
 
   - key: unified_algorithm
     label: "The Complete Unified Diagnostic Algorithm"
-    shape: text
+    shape: list
 
   - key: unified_algorithm_bottom_line
     label: "Bottom line"
@@ -126,7 +168,8 @@ fields:
 
   - key: cross_reference_table
     label: "Integrated Cross-Reference Table — All Entities"
-    shape: text
+    shape: table
+    columns: ["entity", "lm", "if", "em", "clue"]
 
   - key: cross_reference_table_bottom_line
     label: "Bottom line"
