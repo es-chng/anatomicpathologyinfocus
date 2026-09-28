@@ -171,6 +171,11 @@ fields:
     shape: table
     columns: ["entity", "lm", "if", "em", "clue"]
 
+  - key: cross_reference_table_data
+    label: "All Entities"
+    shape: table
+    columns: ["entity", "lm", "if", "em", "clue"]
+
   - key: cross_reference_table_bottom_line
     label: "Bottom line"
     shape: text
