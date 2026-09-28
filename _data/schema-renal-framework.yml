@@ -1,8 +1,7 @@
 # ---- schema-renal-framework.yml ----
 # Schema for pattern-based renal pathology frameworks.
-# Each section is a self-contained question-and-answer unit with its own
-# bottom line. No evidence tables, practical recommendations, or open
-# questions — those fields are deliberately excluded from this schema.
+
+version: 1
 
 name: schema-renal-framework
 label: "Renal Pathology Framework"
@@ -10,15 +9,13 @@ description: >-
   A question-driven framework for renal biopsy interpretation, organized by
   light microscopy pattern. Each section poses a diagnostic question, provides
   the branching logic and reference tables needed to answer it, and ends with
-  a single-sentence bottom line. Intended for teaching frameworks rather than
-  primary research or evidence briefs.
+  a single-sentence bottom line.
 
 # ---- Base fields (shared with schema-brief) ----
 base_fields:
   title:
     type: string
     required: true
-    description: "Full article title."
   authors:
     type: list
     required: true
@@ -65,7 +62,6 @@ base_fields:
     type: enum
     required: true
     values: [draft, published]
-    description: "draft = hidden from issues and the homepage."
   article_type:
     type: string
     required: true
@@ -77,27 +73,23 @@ framework_fields:
     type: text
     required: true
     max_length: 400
-    description: >-
-      The single overarching question the framework answers. Should be
-      answerable by working through the sections in order.
 
   background:
     type: text
     required: true
     max_length: 1200
-    description: >-
-      Short orientation statement. Should state the master organizing
-      principle (for example, "light microscopy pattern is a starting point;
-      immunofluorescence is the master branch point") and describe how the
-      framework is structured.
 
-  bottom_line:
+  # The framework-level teaser. Exactly one teaser field per schema.
+  # This is the field that appears under the title on the homepage and in
+  # issue contents. It must stand alone.
+  teaser:
+    field: bottom_line
     type: text
     required: true
     max_length: 300
     description: >-
-      Framework-level teaser. Appears under the title on the homepage and in
-      issue contents. Must stand alone and must not exceed 300 characters.
+      Framework-level bottom line. Answers the overarching question and
+      doubles as the listing teaser.
 
 # ---- Section fields (repeating) ----
 sections:
@@ -108,42 +100,30 @@ sections:
     heading:
       type: string
       required: true
-      description: "Short section title, typically naming the light microscopy pattern or entity group."
 
     question:
       type: text
       required: true
       max_length: 400
-      description: >-
-        The diagnostic question this section answers. Should be a single,
-        specific, clinically framed question.
 
     content:
       type: markdown
       required: true
-      description: >-
-        The body of the section. May include prose, comparison tables, and
-        decision logic. Should not include an evidence table, practical
-        recommendation list, or open-questions list — those belong to other
-        schemas.
 
     bottom_line:
       type: text
       required: true
       max_length: 300
       description: >-
-        Single-sentence takeaway for this section. Must be self-contained and
-        must not exceed 300 characters. This is the section's answer to its
-        own question.
+        Section-level takeaway. Not a teaser; the framework has exactly one
+        teaser, defined at framework level.
 
 # ---- Fields deliberately excluded from this schema ----
 excluded_fields:
-  - evidence        # not an evidence brief
-  - recommendations # not a guideline
-  - open_questions  # not a research agenda
-  - perspective     # not an opinion piece
-  - conflicts_declared  # retained at framework level only if required by journal
-  - references      # optional; include only if the framework cites specific sources
+  - evidence
+  - recommendations
+  - open_questions
+  - perspective
 
 # ---- Optional framework-level fields ----
 optional_fields:
@@ -152,9 +132,6 @@ optional_fields:
     required: false
     item:
       type: string
-    description: >-
-      Include only if the framework cites specific sources. Ordered by
-      relevance, not alphabetically, unless the journal requires otherwise.
 
   conflicts_declared:
     type: boolean
@@ -168,4 +145,3 @@ optional_fields:
   editorial_note:
     type: string
     required: false
-    description: "Editor-only field; never shown on the site or in the PDF."
