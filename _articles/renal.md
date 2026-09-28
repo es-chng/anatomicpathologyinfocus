@@ -3,8 +3,8 @@ title: "Renal Glomerular Pathology: A Pattern-Based Framework for Light Microsco
 authors:
   - given: "Ewe Seng"
     family: "Ch'ng"
-    affiliation: "Department of Pathology, School of Medical Sciences, Universiti Sains Malaysia, Kelantan, Malaysia"
-corresponding_email: "eweseng@usm.my"
+    affiliation: "Universiti Sains Malaysia, Malaysia"
+corresponding_email: "chngeweseng@hotmail.com"
 volume: 1
 issue: 1
 order: 1
@@ -172,11 +172,9 @@ mesangial_only_table_2:
 
 mesangial_only_bottom_line: >-
   In mesangial expansion without nodules, immunofluorescence is the branch
-  point: immune complex deposits send you to IgA nephropathy, lupus, or
-  infection-related disease (including its IgA-dominant variant); their
-  absence sends you to early diabetic nephropathy, focal segmental
-  glomerulosclerosis, or a nonspecific pattern.
-
+  point: immune deposits point to IgA nephropathy, lupus, or infection-related
+  disease (sometimes IgA-dominant); their absence points to early diabetic
+  nephropathy, focal segmental glomerulosclerosis, or a nonspecific pattern.
 mesangial_endocapillary: >-
   This category groups entities that share combined mesangial and
   endocapillary proliferation on light microscopy, usually with a more acute
@@ -482,12 +480,10 @@ fsgs_table:
     etiology: "Primary, adaptive, genetic, or undetermined; includes reflux nephropathy, Alport syndrome, hypertensive nephrosclerosis, APOL1-associated disease"
 
 fsgs_bottom_line: >-
-  Focal segmental glomerulosclerosis is a clinicopathologic syndrome, not a
-  single disease; nephrotic syndrome plus diffuse effacement points to
-  primary disease, morphology and etiology are complementary framings,
-  adaptive causes converge on compensatory hyperfiltration, and viral,
-  drug-induced, and genetic causes reach the same lesion by other routes.
-
+  Focal segmental glomerulosclerosis is a syndrome, not one disease:
+  nephrotic syndrome with diffuse effacement points to primary disease,
+  adaptive causes converge on hyperfiltration, and viral, drug-induced, and
+  genetic causes reach the same lesion by other routes.
 nodular: >-
   Several distinct entities converge on nodular mesangial expansion, with or
   without hypercellularity. Subclassification requires a systematic special
