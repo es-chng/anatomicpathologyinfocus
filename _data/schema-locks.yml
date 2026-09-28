@@ -9,4 +9,9 @@ schema-brief:
   - de-escalate-DCIS.md
   - whole-blood-prehospital.md
   version: 1
-
+schema-renal-framework:
+  content_hash: da5f73f6f71abbab36777b1329c9cb4de29083f07019c19eeb4819cb3a341942
+  locked_at: '2026-09-28T06:32:49Z'
+  locked_by:
+  - renal.md
+  version: 1
