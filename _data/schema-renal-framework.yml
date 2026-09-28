@@ -1,9 +1,3 @@
-# Article schema: "renal-framework", a pattern-based renal pathology framework.
-#
-# Tables are declared as shape: table fields with explicit column keys, matching
-# the convention used by schema-brief for the evidence table. Markdown pipe
-# tables inside shape: text fields are not parsed by the renderer.
-
 version: 1
 
 fields:
@@ -166,12 +160,11 @@ fields:
     style: boxed
     max_chars: 300
 
-  - key: cross_reference_table
+  - key: cross_reference_table_intro
     label: "Integrated Cross-Reference Table — All Entities"
-    shape: table
-    columns: ["entity", "lm", "if", "em", "clue"]
+    shape: text
 
-  - key: cross_reference_table_data
+  - key: cross_reference_table
     label: "All Entities"
     shape: table
     columns: ["entity", "lm", "if", "em", "clue"]
