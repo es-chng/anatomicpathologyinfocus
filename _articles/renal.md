@@ -28,7 +28,7 @@ background: >-
   organizes glomerular disease by the pattern seen on light microscopy and
   provides the decision logic for each pattern.
 
-normal_lm: >-
+normal_lm: |
   This is the most important pitfall category in renal biopsy interpretation.
   A glomerulus that looks entirely unremarkable on light microscopy does not
   mean the biopsy is normal. Both entities in this group are electron
@@ -61,7 +61,7 @@ normal_lm_bottom_line: >-
   endpoint; minimal change disease and thin basement membrane nephropathy are
   both invisible without electron microscopy.
 
-mesangial_only: >-
+mesangial_only: |
   This category groups entities that share a light microscopic pattern of
   mesangial hypercellularity or proliferation without nodule formation. The
   critical branch point is immunofluorescence: does the mesangial
@@ -100,7 +100,7 @@ mesangial_only_bottom_line: >-
   or infection-related disease; their absence sends you to early diabetic
   nephropathy, focal segmental glomerulosclerosis, or a nonspecific pattern.
 
-mesangial_endocapillary: >-
+mesangial_endocapillary: |
   This category groups entities that share a combined mesangial and
   endocapillary proliferative pattern on light microscopy — a more
   active-appearing, often more acute-onset pattern. The unifying light
@@ -130,7 +130,7 @@ mesangial_endocapillary_bottom_line: >-
   glomerulonephritis with monoclonal immunoglobulin deposits is the only
   chameleon, diagnosable solely by monoclonality.
 
-mpgn_pattern: >-
+mpgn_pattern: |
   The morphologic definition is deliberately broad and mechanism-agnostic:
   mesangial hypercellularity, with or without endocapillary hypercellularity,
   and splitting (double contour) of the glomerular basement membrane. This
@@ -156,7 +156,7 @@ mpgn_pattern_bottom_line: >-
   not a diagnosis; double contours should always trigger a full
   immunofluorescence, electron microscopy, and clinical/serologic workup.
 
-mpgn_if_classification: >-
+mpgn_if_classification: |
   Immunofluorescence is the master branch point that sorts this single light
   microscopy pattern into three fundamentally different disease categories.
 
@@ -187,7 +187,7 @@ mpgn_if_classification_bottom_line: >-
   points to paraprotein deposition, and absent immunoglobulin points to
   complement dysregulation or thrombotic microangiopathy.
 
-crescentic: >-
+crescentic: |
   Crescentic glomerulonephritis is a shared light microscopy endpoint
   produced by three fundamentally distinct immunopathogenic mechanisms.
 
@@ -210,7 +210,7 @@ crescentic_bottom_line: >-
   a final common pathway, not a diagnosis — and immunofluorescence alone
   sorts it into granular, linear, or pauci-immune categories.
 
-fsgs: >-
+fsgs: |
   Focal segmental glomerulosclerosis is a clinicopathologic syndrome, not one
   disease, splitting into five morphologic variants. The most important
   discriminating ultrastructural clue is the extent of foot process
@@ -241,7 +241,7 @@ fsgs_bottom_line: >-
   versus secondary distinction, the variant narrows the differential, and all
   secondary causes converge on compensatory hyperfiltration.
 
-nodular: >-
+nodular: |
   Distinct entities converge on a single light microscopic pattern: nodular
   mesangial expansion, with or without hypercellularity. Recognizing the
   pattern is easy; subclassifying it requires a systematic special stain,
@@ -269,7 +269,7 @@ nodular_bottom_line: >-
   from polyclonal, and electron microscopy separates fibrils from amorphous
   deposits from no deposits at all.
 
-mgp_amyloid_fgn: >-
+mgp_amyloid_fgn: |
   | Feature | Membranous glomerulopathy | Amyloidosis | Fibrillary glomerulonephritis |
   | --- | --- | --- | --- |
   | Most common demographic | Most common cause of nephrotic syndrome in white adults | Any age; systemic disease | Rare; any age |
@@ -283,7 +283,7 @@ mgp_amyloid_fgn_bottom_line: >-
   fibrillary glomerulonephritis, Congo red separates amyloid, and fibril
   diameter on electron microscopy makes the final distinction.
 
-unified_algorithm: >-
+unified_algorithm: |
   Light microscopy pattern, then the deciding modality:
 
   - Normal → electron microscopy → foot process effacement (minimal change disease) or glomerular basement membrane thinning (thin basement membrane nephropathy)
@@ -299,7 +299,7 @@ unified_algorithm_bottom_line: >-
   immunofluorescence, electron microscopy, and clinical correlation agree on
   a single diagnosis.
 
-cross_reference_table: >-
+cross_reference_table: |
   | Entity | Light microscopy | Immunofluorescence | Electron microscopy | Key clinical clue |
   | --- | --- | --- | --- | --- |
   | Minimal change disease | Normal | Negative | Foot process effacement | Nephrotic syndrome, children |
