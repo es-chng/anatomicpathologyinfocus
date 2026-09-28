@@ -15,7 +15,7 @@ licence: "CC BY 4.0"
 # doi: is added automatically by the Zenodo workflow; no need to write it
 
 # ---- Article type (file in _data/) and whether it is live ----
-schema: schema-brief
+schema: schema-renal-framework
 status: published
 
 # ---- Schema fields: the sections defined in _data/schema-brief.yml ----
