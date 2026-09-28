@@ -1,0 +1,171 @@
+# ---- schema-renal-framework.yml ----
+# Schema for pattern-based renal pathology frameworks.
+# Each section is a self-contained question-and-answer unit with its own
+# bottom line. No evidence tables, practical recommendations, or open
+# questions — those fields are deliberately excluded from this schema.
+
+name: schema-renal-framework
+label: "Renal Pathology Framework"
+description: >-
+  A question-driven framework for renal biopsy interpretation, organized by
+  light microscopy pattern. Each section poses a diagnostic question, provides
+  the branching logic and reference tables needed to answer it, and ends with
+  a single-sentence bottom line. Intended for teaching frameworks rather than
+  primary research or evidence briefs.
+
+# ---- Base fields (shared with schema-brief) ----
+base_fields:
+  title:
+    type: string
+    required: true
+    description: "Full article title."
+  authors:
+    type: list
+    required: true
+    item:
+      given:
+        type: string
+        required: true
+      family:
+        type: string
+        required: true
+      affiliation:
+        type: string
+        required: false
+      orcid:
+        type: string
+        required: false
+  corresponding_email:
+    type: string
+    required: true
+  volume:
+    type: integer
+    required: true
+  issue:
+    type: integer
+    required: true
+  order:
+    type: integer
+    required: true
+  pages:
+    type: string
+    required: true
+  published_date:
+    type: date
+    required: true
+  licence:
+    type: string
+    required: true
+    default: "CC BY 4.0"
+  schema:
+    type: string
+    required: true
+    value: schema-renal-framework
+  status:
+    type: enum
+    required: true
+    values: [draft, published]
+    description: "draft = hidden from issues and the homepage."
+  article_type:
+    type: string
+    required: true
+    default: "Pathology framework"
+
+# ---- Framework-level fields ----
+framework_fields:
+  question:
+    type: text
+    required: true
+    max_length: 400
+    description: >-
+      The single overarching question the framework answers. Should be
+      answerable by working through the sections in order.
+
+  background:
+    type: text
+    required: true
+    max_length: 1200
+    description: >-
+      Short orientation statement. Should state the master organizing
+      principle (for example, "light microscopy pattern is a starting point;
+      immunofluorescence is the master branch point") and describe how the
+      framework is structured.
+
+  bottom_line:
+    type: text
+    required: true
+    max_length: 300
+    description: >-
+      Framework-level teaser. Appears under the title on the homepage and in
+      issue contents. Must stand alone and must not exceed 300 characters.
+
+# ---- Section fields (repeating) ----
+sections:
+  type: list
+  required: true
+  min_items: 1
+  item:
+    heading:
+      type: string
+      required: true
+      description: "Short section title, typically naming the light microscopy pattern or entity group."
+
+    question:
+      type: text
+      required: true
+      max_length: 400
+      description: >-
+        The diagnostic question this section answers. Should be a single,
+        specific, clinically framed question.
+
+    content:
+      type: markdown
+      required: true
+      description: >-
+        The body of the section. May include prose, comparison tables, and
+        decision logic. Should not include an evidence table, practical
+        recommendation list, or open-questions list — those belong to other
+        schemas.
+
+    bottom_line:
+      type: text
+      required: true
+      max_length: 300
+      description: >-
+        Single-sentence takeaway for this section. Must be self-contained and
+        must not exceed 300 characters. This is the section's answer to its
+        own question.
+
+# ---- Fields deliberately excluded from this schema ----
+excluded_fields:
+  - evidence        # not an evidence brief
+  - recommendations # not a guideline
+  - open_questions  # not a research agenda
+  - perspective     # not an opinion piece
+  - conflicts_declared  # retained at framework level only if required by journal
+  - references      # optional; include only if the framework cites specific sources
+
+# ---- Optional framework-level fields ----
+optional_fields:
+  references:
+    type: list
+    required: false
+    item:
+      type: string
+    description: >-
+      Include only if the framework cites specific sources. Ordered by
+      relevance, not alphabetically, unless the journal requires otherwise.
+
+  conflicts_declared:
+    type: boolean
+    required: false
+    default: false
+
+  last_reviewed:
+    type: date
+    required: false
+
+  editorial_note:
+    type: string
+    required: false
+    description: "Editor-only field; never shown on the site or in the PDF."
