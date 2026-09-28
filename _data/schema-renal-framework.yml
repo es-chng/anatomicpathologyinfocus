@@ -11,137 +11,51 @@ description: >-
   the branching logic and reference tables needed to answer it, and ends with
   a single-sentence bottom line.
 
-# ---- Base fields (shared with schema-brief) ----
-base_fields:
-  title:
-    type: string
-    required: true
-  authors:
-    type: list
-    required: true
-    item:
-      given:
-        type: string
-        required: true
-      family:
-        type: string
-        required: true
-      affiliation:
-        type: string
-        required: false
-      orcid:
-        type: string
-        required: false
-  corresponding_email:
-    type: string
-    required: true
-  volume:
-    type: integer
-    required: true
-  issue:
-    type: integer
-    required: true
-  order:
-    type: integer
-    required: true
-  pages:
-    type: string
-    required: true
-  published_date:
-    type: date
-    required: true
-  licence:
-    type: string
-    required: true
-    default: "CC BY 4.0"
-  schema:
-    type: string
-    required: true
-    value: schema-renal-framework
-  status:
-    type: enum
-    required: true
-    values: [draft, published]
-  article_type:
-    type: string
-    required: true
-    default: "Pathology framework"
-
 # ---- Framework-level fields ----
-framework_fields:
-  question:
-    type: text
-    required: true
-    max_length: 400
+fields:
+  - key: question
+    label: "Question"
+    shape: text
+    style: plain
+    max_chars: 400
 
-  background:
-    type: text
-    required: true
-    max_length: 1200
+  - key: background
+    label: "Background"
+    shape: text
+    style: plain
+    max_chars: 1200
 
-  # The framework-level teaser. Exactly one teaser field per schema.
-  # This is the field that appears under the title on the homepage and in
-  # issue contents. It must stand alone.
-  teaser:
-    field: bottom_line
-    type: text
-    required: true
-    max_length: 300
-    description: >-
-      Framework-level bottom line. Answers the overarching question and
-      doubles as the listing teaser.
+  - key: bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    teaser: true
+    max_chars: 300
 
 # ---- Section fields (repeating) ----
 sections:
-  type: list
-  required: true
+  key: sections
+  label: "Sections"
   min_items: 1
   item:
-    heading:
-      type: string
-      required: true
+    - key: heading
+      label: "Heading"
+      shape: text
+      style: plain
 
-    question:
-      type: text
-      required: true
-      max_length: 400
+    - key: question
+      label: "Question"
+      shape: text
+      style: plain
+      max_chars: 400
 
-    content:
-      type: markdown
-      required: true
+    - key: content
+      label: "Content"
+      shape: markdown
+      style: plain
 
-    bottom_line:
-      type: text
-      required: true
-      max_length: 300
-      description: >-
-        Section-level takeaway. Not a teaser; the framework has exactly one
-        teaser, defined at framework level.
-
-# ---- Fields deliberately excluded from this schema ----
-excluded_fields:
-  - evidence
-  - recommendations
-  - open_questions
-  - perspective
-
-# ---- Optional framework-level fields ----
-optional_fields:
-  references:
-    type: list
-    required: false
-    item:
-      type: string
-
-  conflicts_declared:
-    type: boolean
-    required: false
-    default: false
-
-  last_reviewed:
-    type: date
-    required: false
-
-  editorial_note:
-    type: string
-    required: false
+    - key: bottom_line
+      label: "Bottom line"
+      shape: text
+      style: boxed
+      max_chars: 300
