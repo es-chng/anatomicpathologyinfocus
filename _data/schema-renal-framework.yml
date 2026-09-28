@@ -1,29 +1,138 @@
-# ---- schema-renal-framework.yml ----
-# Schema for pattern-based renal pathology frameworks.
+# Article schema: "renal-framework", a pattern-based renal pathology framework.
+#
+# All content lives in a single set of flat fields, in the order it appears on
+# the web page and in the PDF. Each section of the framework is unrolled into
+# its own field with its own boxed bottom line.
+#
+# Articles refer to it by file name:
+#   schema: schema-renal-framework
 
 version: 1
 
-name: schema-renal-framework
-label: "Renal Pathology Framework"
-description: >-
-  A question-driven framework for renal biopsy interpretation, organized by
-  light microscopy pattern. Each section poses a diagnostic question, provides
-  the branching logic and reference tables needed to answer it, and ends with
-  a single-sentence bottom line.
-
-# ---- Framework-level fields ----
 fields:
+  - key: article_type
+    label: "Article type"
+    shape: text
+    style: badge
+
   - key: question
     label: "Question"
     shape: text
-    style: plain
-    max_chars: 400
+    style: boxed
 
   - key: background
     label: "Background"
     shape: text
-    style: plain
-    max_chars: 1200
+
+  - key: normal_lm
+    label: "Normal Glomeruli by Light Microscopy"
+    shape: text
+
+  - key: normal_lm_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: mesangial_only
+    label: "Mesangial Proliferation Without Nodules"
+    shape: text
+
+  - key: mesangial_only_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: mesangial_endocapillary
+    label: "Mesangial and Endocapillary Proliferation"
+    shape: text
+
+  - key: mesangial_endocapillary_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: mpgn_pattern
+    label: "Membranoproliferative Glomerulonephritis Pattern"
+    shape: text
+
+  - key: mpgn_pattern_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: mpgn_if_classification
+    label: "Immunofluorescence-Based Classification of the Membranoproliferative Pattern"
+    shape: text
+
+  - key: mpgn_if_classification_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: crescentic
+    label: "Crescentic Glomerulonephritis — The Master Three"
+    shape: text
+
+  - key: crescentic_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: fsgs
+    label: "Focal Segmental Glomerulosclerosis"
+    shape: text
+
+  - key: fsgs_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: nodular
+    label: "Nodular Mesangial Expansion — Integrated Differential Diagnosis"
+    shape: text
+
+  - key: nodular_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: mgp_amyloid_fgn
+    label: "Membranous Glomerulopathy Versus Amyloidosis Versus Fibrillary Glomerulonephritis"
+    shape: text
+
+  - key: mgp_amyloid_fgn_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: unified_algorithm
+    label: "The Complete Unified Diagnostic Algorithm"
+    shape: text
+
+  - key: unified_algorithm_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
+
+  - key: cross_reference_table
+    label: "Integrated Cross-Reference Table — All Entities"
+    shape: text
+
+  - key: cross_reference_table_bottom_line
+    label: "Bottom line"
+    shape: text
+    style: boxed
+    max_chars: 300
 
   - key: bottom_line
     label: "Bottom line"
@@ -32,30 +141,22 @@ fields:
     teaser: true
     max_chars: 300
 
-# ---- Section fields (repeating) ----
-sections:
-  key: sections
-  label: "Sections"
-  min_items: 1
-  item:
-    - key: heading
-      label: "Heading"
-      shape: text
-      style: plain
+  - key: conflicts_declared
+    label: "Conflicts of interest declared"
+    shape: boolean
 
-    - key: question
-      label: "Question"
-      shape: text
-      style: plain
-      max_chars: 400
+  - key: last_reviewed
+    label: "Evidence reviewed on"
+    shape: date
 
-    - key: content
-      label: "Content"
-      shape: markdown
-      style: plain
+  - key: references
+    label: "References"
+    shape: list
+    style: numbered
+    optional: true
 
-    - key: bottom_line
-      label: "Bottom line"
-      shape: text
-      style: boxed
-      max_chars: 300
+  - key: editorial_note
+    label: "Editorial note"
+    shape: text
+    visibility: editor
+    optional: true
